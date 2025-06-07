@@ -5,22 +5,6 @@
     <title>Interactive Music Visualizer</title>
     <style>
         body { margin: 0; overflow: hidden; }
-        #controls { position: absolute; top: 10px; left: 10px; z-index: 10; background: rgba(255,255,255,0.8); padding: 0.5rem; border-radius: 4px; }
-    </style>
-</head>
-<body>
-    <div id="controls">
-        <select id="vizSelect">
-            <option value="cube">Cube</option>
-            <option value="sphere">Sphere</option>
-            <option value="particles">Particles</option>
-            <option value="bars">Bars</option>
-        </select>
-        <label><input type="radio" name="audioSource" value="mic" checked> Microphone</label>
-        <label><input type="radio" name="audioSource" value="file"> WAV File</label>
-        <input id="audioFile" type="file" accept=".wav" style="display:none">
-        <button id="startButton">Start Visualizer</button>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
